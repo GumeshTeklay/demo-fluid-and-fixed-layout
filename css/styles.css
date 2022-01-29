@@ -9,6 +9,11 @@ body{
     color: #fff;
 }
 
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 header,
 footer{
     background-color: #115194;
@@ -33,4 +38,15 @@ nav{
     background-color: #b0d892;
     padding: 128px 0;
     margin-bottom: 24px;
+    /* One key item for RWD is % based containers =
+    fluid layouts */
+    /* width: calc(100%/3); //same as width: 33.33; */
+    width: 32%;
+}
+
+@media screen and (min-width:1300px) {
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
 }
